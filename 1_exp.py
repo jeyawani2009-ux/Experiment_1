@@ -4,6 +4,31 @@ import streamlit as st
 st.set_page_config(page_title="ScentSense", page_icon=" ", layout="wide")
 
 # -------------------- STYLING --------------------
+
+page_bg = """
+<style>
+/* Entire app background */
+.stApp {
+    background-color: #d9c7a1 !important;  /* a slightly darker, aesthetic beige */
+    background-image: none !important;
+}
+
+/* Remove Streamlit's default white backgrounds */
+[data-testid="stAppViewContainer"] {
+    background-color: #d9c7a1 !important;
+}
+
+[data-testid="stHeader"] {
+    background: none !important;
+}
+
+[data-testid="stToolbar"] {
+    right: 2rem;
+}
+</style>
+"""
+st.markdown(page_bg, unsafe_allow_html=True)
+
 st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@600&display=swap');
