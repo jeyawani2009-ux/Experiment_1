@@ -9,13 +9,13 @@ page_bg = """
 <style>
 /* Entire app background */
 .stApp {
-    background-color: #F5F5DC !important;  /* a slightly darker, aesthetic beige */
+    background-color: #F8F7F3 !important;  /* a slightly darker, aesthetic beige */
     background-image: none !important;
 }
 
 /* Remove Streamlit's default white backgrounds */
 [data-testid="stAppViewContainer"] {
-    background-color: #F5F4DC !important;
+    background-color: #F8F7F3 !important;
 }
 
 [data-testid="stHeader"] {
@@ -34,7 +34,7 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@600&display=swap');
 
 html, body, [class*="css"] {
-    background-color: #F5F5DC; /* darker aesthetic beige */
+    background-color: #F8F7F3; /* darker aesthetic beige */
     background-attachment: fixed;
     background-size: cover;
     color: #3B2A4A;
