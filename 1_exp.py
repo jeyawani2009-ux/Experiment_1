@@ -1,31 +1,65 @@
 import streamlit as st
-from streamlit_lottie import st_lottie
-import requests
 
 # -------------------- PAGE SETUP --------------------
-st.set_page_config(page_title="ScentSense – Find Your Calm", 
-                   page_icon="🌸", 
-                   layout="wide")
+st.set_page_config(page_title="ScentSense", page_icon="🌸", layout="wide")
 
 # -------------------- CUSTOM STYLE --------------------
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@500&display=swap');
-
 html, body, [class*="css"]  {
-    font-family: 'Poppins', sans-serif;
+    background-color: #F5F5DC;  /* Beige/off-white */
     color: #3B2A4A;
+    font-family: 'Poppins', sans-serif;
 }
 
-[data-testid="stAppViewContainer"] {
-    background: linear-gradient(145deg, #F5EFFF 0%, #E5D4ED 50%, #F9F3FF 100%);
-    background-attachment: fixed;
+h1 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 3em;
+    color: #6D2E46;
+    margin-top: 2em;
 }
 
-[data-testid="stHeader"] {
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
+.stButton>button {
+    background-color: #B088F9;
+    color: white;
+    border: none;
+    padding: 0.7em 2em;
+    border-radius: 30px;
+    font-size: 1.2em;
+    transition: 0.3s;
 }
+
+.stButton>button:hover {
+    background-color: #A16AE8;
+    transform: scale(1.03);
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+# -------------------- HOME PAGE CONTENT --------------------
+st.markdown("<h1>🌸 ScentSense</h1>", unsafe_allow_html=True)
+
+# Placeholder for description
+st.write("Your description goes here…")
+
+st.markdown("<br><br>", unsafe_allow_html=True)
+
+# Button to navigate to quiz
+if st.button("🧘 Take Quiz"):
+    st.session_state['page'] = 'quiz'
+
+# -------------------- NAVIGATION LOGIC --------------------
+# Initialize session_state
+if 'page' not in st.session_state:
+    st.session_state['page'] = 'home'
+
+# Redirect to quiz page if button clicked
+if st.session_state['page'] == 'quiz':
+    # Here you can import and run your quiz code
+    # For demo, just show placeholder
+    st.write("🚀 Quiz Page Placeholder - Add your quiz here")
 
 [data-testid="stSidebar"] {
     background: rgba(255, 255, 255, 0.4);
