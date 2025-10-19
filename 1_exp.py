@@ -103,7 +103,7 @@ if st.session_state.page == "home":
 
 # -------------------- QUIZ PAGE --------------------
 elif st.session_state.page == "quiz":
-    st.markdown("<h1 style='text-align:center>Find Your Calming Scent</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align:center;'>Find Your Calming Scent</h1>", unsafe_allow_html=True)
     st.write("This is where your quiz questions will go!")
 
     # Example quiz question placeholder
