@@ -56,6 +56,23 @@ h1 {
     color: #6D2E46;
     margin-top: -5rem !important;
     margin-bottom: 0.1em !important;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #6D2E46;
+    width: 0;
+    animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite alternate;
+}
+
+/* Typing animation keyframes */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Blinking cursor */
+@keyframes blink {
+    50% { border-color: transparent }
+}
 }
 p, h2 {
     text-align: left
