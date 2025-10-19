@@ -40,6 +40,12 @@ html, body, [class*="css"] {
     color: #3B2A4A;
     font-family: 'Poppins', sans-serif;
 }
+/* Remove Streamlit's default padding */
+[data-testid="stAppViewContainer"] {
+    padding-top: 0rem !important;
+    padding-left: 2rem !important;
+}
+
 
 h1 {
     font-family: 'Freestyle Script', cursive !important; /* handwritten style for header */
