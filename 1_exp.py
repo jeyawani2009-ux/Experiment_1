@@ -15,7 +15,7 @@ page_bg = """
 
 /* Remove Streamlit's default white backgrounds */
 [data-testid="stAppViewContainer"] {
-    background-color: #d9c7a1 !important;
+    background-color: #F5F4DC !important;
 }
 
 [data-testid="stHeader"] {
