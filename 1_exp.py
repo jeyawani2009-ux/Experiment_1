@@ -1,7 +1,7 @@
 import streamlit as st
 
 # -------------------- PAGE SETUP --------------------
-st.set_page_config(page_title="ScentSense", page_icon="🌸", layout="wide")
+st.set_page_config(page_title="ScentSense", page_icon=" ", layout="wide")
 
 # -------------------- STYLING --------------------
 st.markdown("""
@@ -9,7 +9,7 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@600&display=swap');
 
 html, body, [class*="css"] {
-    background-color: #F9F6EE; /* soft beige/off-white */
+    background-color: #FCF4D7; /* soft beige/cornsilk white */
     color: #3B2A4A;
     font-family: 'Poppins', sans-serif;
 }
