@@ -76,11 +76,22 @@ h1, h2, h3 {
     text-align: center;
 }
 
+st.markdown("""
+<style>
 h1 {
     font-size: 2.5em;
     color: #6D2E46;
-    margin-bottom: 0.3em;
+    text-align: center;
 }
+.stButton>button {
+    background-color: #B088F9;
+    color: white;
+    border-radius: 30px;
+    padding: 0.6em 2em;
+    font-size: 1em;
+}
+</style>
+""", unsafe_allow_html=True)
 
 .stButton>button {
     background-color: #B088F9;
