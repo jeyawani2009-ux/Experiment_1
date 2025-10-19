@@ -56,7 +56,7 @@ h1 {
     color: #6D2E46;
     margin-top: -5rem !important;
     margin-bottom: 0.1em !important;
-        position: relative;
+    position: relative;
     display: inline-block;
     overflow: hidden;
 }
