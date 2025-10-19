@@ -31,7 +31,7 @@ st.markdown(page_bg, unsafe_allow_html=True)
 
 st.markdown("""
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Freestyle+Script:wght@300;500&family=Playfair+Display:wght@600&display=swap');
 
 html, body, [class*="css"] {
     background-color: #F8F7F3; /* darker aesthetic beige */
@@ -42,7 +42,7 @@ html, body, [class*="css"] {
 }
 
 h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Freestyle Script', cursive !important; /* handwritten style for header */
     text-align: center;
     font-size: 3em;
     color: #6D2E46;
