@@ -54,22 +54,8 @@ h1 {
     text-align: left;
     font-size: 8em !important;
     color: #6D2E46;
-    -webkit-text-stroke: 1px #6D2E46;
-    background: linear-gradient(90deg, #6D2E46 0%, #6D2E46 50%, transparent 50%);
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    background-size: 200% 100%;
-    animation: handwriting 4s ease forwards;
     margin-top: -5rem !important;
     margin-bottom: 0.1em !important;
-}
-@keyframes handwriting {
-    from {
-        background-position: 100% 0;
-    }
-    to {
-        background-position: 0 0;
-    }
 }
 p, h2 {
     text-align: left
