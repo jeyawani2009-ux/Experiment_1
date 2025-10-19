@@ -56,23 +56,32 @@ h1 {
     color: #6D2E46;
     margin-top: -5rem !important;
     margin-bottom: 0.1em !important;
-    white-space: nowrap;
+        position: relative;
+    display: inline-block;
     overflow: hidden;
-    border-right: 3px solid #6D2E46;
-    width: 0;
-    animation: typing 4s steps(40, end) forwards, blink 0.7s step-end infinite alternate;
 }
 
-/* Typing animation keyframes */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+/* Create the writing effect */
+h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #F8F7F3; /* matches background */
+    animation: reveal 3.5s ease-out forwards;
+    transform-origin: left;
 }
 
-/* Blinking cursor */
-@keyframes blink {
-    50% { border-color: transparent }
-}
+/* Animate the mask sliding off */
+@keyframes reveal {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }
 p, h2 {
     text-align: left
