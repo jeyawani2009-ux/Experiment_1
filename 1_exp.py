@@ -34,7 +34,7 @@ st.markdown("""
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&family=Playfair+Display:wght@600&display=swap');
 
 html, body, [class*="css"] {
-    background-color: #E8E3D3; /* darker aesthetic beige */
+    background-color: #F5F5DC; /* darker aesthetic beige */
     background-attachment: fixed;
     background-size: cover;
     color: #3B2A4A;
