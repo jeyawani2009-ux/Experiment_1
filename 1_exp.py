@@ -1,7 +1,7 @@
 import streamlit as st
 
 # -------------------- PAGE SETUP --------------------
-st.set_page_config(page_title="ScentSense", page_icon=" ", layout="wide")
+st.set_page_config(page_title="ScentSense", layout="wide")
 
 # -------------------- STYLING --------------------
 
