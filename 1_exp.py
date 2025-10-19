@@ -63,7 +63,6 @@ if st.session_state['page'] == 'quiz':
 
 [data-testid="stSidebar"] {
     background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(12px);
     border-radius: 15px;
 }
 
