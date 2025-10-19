@@ -54,33 +54,22 @@ h1 {
     text-align: left;
     font-size: 8em !important;
     color: #6D2E46;
+    color: transparent;
+    -webkit-text-stroke: 1px #6D2E46;
+    background: linear-gradient(90deg, #6D2E46 0%, #6D2E46 50%, transparent 50%);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-size: 200% 100%;
+    animation: handwriting 4s ease forwards;
     margin-top: -5rem !important;
     margin-bottom: 0.1em !important;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
 }
-
-/* Create the writing effect */
-h1::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #F8F7F3; /* matches background */
-    animation: reveal 3.5s ease-out forwards;
-    transform-origin: left;
-}
-
-/* Animate the mask sliding off */
-@keyframes reveal {
+@keyframes handwriting {
     from {
-        transform: translateX(0);
+        background-position: 100% 0;
     }
     to {
-        transform: translateX(100%);
+        background-position: 0 0;
     }
 }
 p, h2 {
