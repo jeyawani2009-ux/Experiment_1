@@ -55,7 +55,7 @@ h1 {
     font-size: 8em !important;
     color: #6D2E46;
     margin-top: -5rem !important;
-    margin-bottom: 3em !important;
+    margin-bottom: 0.1em !important;
 }
 p, h2 {
     text-align: left
