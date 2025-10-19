@@ -61,10 +61,15 @@ if st.session_state['page'] == 'quiz':
     # For demo, just show placeholder
     st.write("🚀 Quiz Page Placeholder - Add your quiz here")
 
+st.markdown("""
+<style>
 [data-testid="stSidebar"] {
-    background: rgba(255, 255, 255, 0.4);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 15px;
 }
+</style>
+""", unsafe_allow_html=True)
+
 
 h1, h2, h3 {
     font-family: 'Playfair Display', serif;
