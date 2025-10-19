@@ -9,7 +9,7 @@ page_bg = """
 <style>
 /* Entire app background */
 .stApp {
-    background-color: #d9c7a1 !important;  /* a slightly darker, aesthetic beige */
+    background-color: #F5F5DC !important;  /* a slightly darker, aesthetic beige */
     background-image: none !important;
 }
 
