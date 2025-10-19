@@ -56,22 +56,6 @@ h1 {
     color: #6D2E46;
     margin-top: -3rem !important;
     margin-bottom: 0.5em !important;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid #6D2E46;
-    width: 0;
-    animation: typing 3s steps(30, end) forwards, blink 0.6s step-end infinite alternate;
-}
-
-/* Typing animation */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* Cursor blink animation */
-@keyframes blink {
-    50% { border-color: transparent }
 }
 p, h2 {
     text-align: left
