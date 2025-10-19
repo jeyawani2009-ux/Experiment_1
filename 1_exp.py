@@ -111,6 +111,8 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html = True)
+st.markdown("""
+<style>
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
