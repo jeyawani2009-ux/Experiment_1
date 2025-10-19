@@ -48,15 +48,31 @@ html, body, [class*="css"] {
     margin-top: 0rem !important;
 }
 
+/* Handwritten header animation */
 h1 {
-    font-family: 'Freestyle Script', cursive !important; /* handwritten style for header */
-    text-align: left;
+    font-family: 'Freestyle Script', cursive !important;
+    text-align: center;
     font-size: 8em !important;
     color: #6D2E46;
-    margin-top: -5rem !important;
+    margin-top: -3rem !important;
     margin-bottom: 0.5em !important;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #6D2E46;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.6s step-end infinite alternate;
 }
 
+/* Typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Cursor blink animation */
+@keyframes blink {
+    50% { border-color: transparent }
+}
 p, h2 {
     text-align: left
     font-size: 1.1em;
