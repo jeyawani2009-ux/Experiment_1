@@ -44,7 +44,7 @@ html, body, [class*="css"] {
 h1 {
     font-family: 'Freestyle Script', cursive !important; /* handwritten style for header */
     text-align: center;
-    font-size: 12em;
+    font-size: 6em;
     color: #6D2E46;
     margin-top: 2em;
 }
