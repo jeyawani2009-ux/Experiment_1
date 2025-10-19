@@ -54,7 +54,6 @@ h1 {
     text-align: left;
     font-size: 8em !important;
     color: #6D2E46;
-    color: transparent;
     -webkit-text-stroke: 1px #6D2E46;
     background: linear-gradient(90deg, #6D2E46 0%, #6D2E46 50%, transparent 50%);
     background-repeat: no-repeat;
