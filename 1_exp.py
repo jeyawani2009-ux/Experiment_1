@@ -88,7 +88,7 @@ if "page" not in st.session_state:
 
 # -------------------- HOME PAGE --------------------
 if st.session_state.page == "home":
-    st.markdown("<h1>🌸 ScentSense</h1>", unsafe_allow_html=True)
+    st.markdown("<h1>ScentSense</h1>", unsafe_allow_html=True)
     st.markdown("<p>Write your app’s description here later...</p>", unsafe_allow_html=True)
 
     if st.button("🧘 Take Quiz"):
