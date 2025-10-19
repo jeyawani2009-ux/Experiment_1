@@ -93,6 +93,8 @@ h1 {
 </style>
 """, unsafe_allow_html=True)
 
+st.markdown("""
+<style>
 .stButton>button {
     background-color: #B088F9;
     color: white;
@@ -107,7 +109,8 @@ h1 {
     background-color: #A16AE8;
     transform: scale(1.03);
 }
-
+</style>
+""", unsafe_allow_html = True)
 @keyframes fadeIn {
   from {opacity: 0;}
   to {opacity: 1;}
