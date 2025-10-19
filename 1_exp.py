@@ -43,10 +43,10 @@ html, body, [class*="css"] {
 
 h1 {
     font-family: 'Freestyle Script', cursive !important; /* handwritten style for header */
-    text-align: center;
+    text-align: left;
     font-size: 8em !important;
     color: #6D2E46;
-    margin-top: 1em;
+    margin-top: -1em;
 }
 
 p, h2 {
