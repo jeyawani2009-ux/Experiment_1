@@ -58,7 +58,7 @@ h1 {
 }
 
 p, h2 {
-    text-align: center;
+    text-align: left
     font-size: 1.1em;
 }
 
