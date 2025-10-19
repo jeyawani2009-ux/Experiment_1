@@ -45,6 +45,7 @@ html, body, [class*="css"] {
 [data-testid="stAppViewContainer"] {
     padding-top: 0rem !important;
     padding-left: 2rem !important;
+    margin-top: 0rem !important;
 }
 
 h1 {
@@ -52,7 +53,8 @@ h1 {
     text-align: left;
     font-size: 8em !important;
     color: #6D2E46;
-    margin-top: -5em;
+    margin-top: 0rem !important;
+    margin-bottom: 0.5em !important;
 }
 
 p, h2 {
