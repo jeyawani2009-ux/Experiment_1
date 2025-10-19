@@ -10,6 +10,8 @@ st.markdown("""
 
 html, body, [class*="css"] {
     background-color: #E8E3D3; /* darker aesthetic beige */
+    background-attachment: fixed;
+    background-size: cover;
     color: #3B2A4A;
     font-family: 'Poppins', sans-serif;
 }
