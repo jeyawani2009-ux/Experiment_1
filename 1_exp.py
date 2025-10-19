@@ -51,11 +51,11 @@ html, body, [class*="css"] {
 /* Handwritten header animation */
 h1 {
     font-family: 'Freestyle Script', cursive !important;
-    text-align: center;
+    text-align: left;
     font-size: 8em !important;
     color: #6D2E46;
-    margin-top: -3rem !important;
-    margin-bottom: 0.5em !important;
+    margin-top: -5rem !important;
+    margin-bottom: 3em !important;
 }
 p, h2 {
     text-align: left
