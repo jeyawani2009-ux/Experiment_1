@@ -46,7 +46,7 @@ h1 {
     text-align: left;
     font-size: 8em !important;
     color: #6D2E46;
-    margin-top: -12em;
+    margin-top: -0.3em;
 }
 
 p, h2 {
