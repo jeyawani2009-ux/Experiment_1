@@ -4,12 +4,11 @@ import streamlit as st
 st.set_page_config(page_title="ScentSense", layout="wide")
 
 # -------------------- STYLING --------------------
-
 page_bg = """
 <style>
 /* Entire app background */
 .stApp {
-    background-color: #F8F7F3 !important;  /* a slightly darker, aesthetic beige */
+    background-color: #F8F7F3 !important;
     background-image: none !important;
 }
 
@@ -25,43 +24,40 @@ page_bg = """
 [data-testid="stToolbar"] {
     right: 2rem;
 }
-</style>
-"""
-st.markdown(page_bg, unsafe_allow_html=True)
 
-st.markdown("""
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Freestyle+Script:wght@300;500&family=Playfair+Display:wght@600&display=swap');
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Freestyle+Script:wght@300;500&family=Playfair+Display:wght@600&family=Poppins:wght@400;500&display=swap');
 
 html, body, [class*="css"] {
-    background-color: #F8F7F3; /* darker aesthetic beige */
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: #F8F7F3;
     color: #3B2A4A;
     font-family: 'Poppins', sans-serif;
 }
 
-/* Remove Streamlit's default padding */
+/* Remove Streamlit default padding */
 [data-testid="stAppViewContainer"] {
     padding-top: 0rem !important;
     padding-left: 2rem !important;
     margin-top: 0rem !important;
 }
 
-/* Handwritten header animation */
+/* Header font */
 h1 {
     font-family: 'Freestyle Script', cursive !important;
     text-align: left;
     font-size: 8em !important;
-    color: #0A0A0A !important ;
+    color: #0A0A0A !important;
     margin-top: -5rem !important;
     margin-bottom: 0.1em !important;
 }
+
+/* Paragraphs */
 p, h2 {
-    text-align: left
+    text-align: left;
     font-size: 1.1em;
 }
 
+/* Button styling */
 .stButton>button {
     background-color: #B088F9;
     color: white;
@@ -79,39 +75,6 @@ p, h2 {
     transform: scale(1.05);
 }
 
+/* Animation */
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}0
-
-div, h1, h2, p {
-  animation: fadeIn 1.5s ease-in-out;
-}
-</style>
-""", unsafe_allow_html=True)
-
-st.markdown(page_bg, unsafe_allow_html=True)
-
-# -------------------- NAVIGATION --------------------
-if "page" not in st.session_state:
-    st.session_state.page = "home"
-
-# -------------------- HOME PAGE --------------------
-if st.session_state.page == "home":
-    st.markdown("<h1>ScentSense</h1>", unsafe_allow_html=True)
-    st.markdown("<p>Write your app’s description here later...</p>", unsafe_allow_html=True)
-
-    if st.button("Take Quiz"):
-        st.session_state.page = "quiz"
-
-# -------------------- QUIZ PAGE --------------------
-elif st.session_state.page == "quiz":
-    st.markdown("<h1 style='text-align:center;'>Find Your Calming Scent</h1>", unsafe_allow_html=True)
-    st.write("This is where your quiz questions will go!")
-
-    # Example quiz question placeholder
-    mood = st.radio("How do you usually feel after a stressful day?",
-                    ["Tired and drained", "Restless and anxious", "Sad or heavy", "Irritable or tense"])
-
-    if st.button("⬅️ Back to Home"):
-        st.session_state.page = "home"
+  from {
