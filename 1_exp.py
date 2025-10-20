@@ -90,44 +90,6 @@ div, h1, h2, p {
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-<style>
-html, body, [class*="css"] {
-    background-color: #F8F7F3;
-}
-
-/* Center alignment for SVG */
-.svg-container {
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 3rem;
-    margin-top: -3rem;
-}
-
-/* SVG path animation */
-path {
-  fill: none;
-  stroke: #6D2E46;
-  stroke-width: 3;
-  stroke-dasharray: 1200;
-  stroke-dashoffset: 1200;
-  animation: draw 4s ease-in-out forwards;
-}
-
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-</style>
-
-<div class="svg-container">
-<svg width="900" height="180" viewBox="0 0 900 180" xmlns="http://www.w3.org/2000/svg">
-  <path d="M10,120 Q100,10 200,100 T400,120 T600,80 T800,100" />
-  <text x="50" y="120" font-family="Freestyle Script, cursive" font-size="90" fill="#6D2E46">Find Your Calming Scent</text>
-</svg>
-</div>
-""", unsafe_allow_html=True)
 # -------------------- NAVIGATION --------------------
 if "page" not in st.session_state:
     st.session_state.page = "home"
