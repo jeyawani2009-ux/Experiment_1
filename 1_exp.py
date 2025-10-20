@@ -29,67 +29,6 @@ page_bg = """
 """
 st.markdown(page_bg, unsafe_allow_html=True)
 
-st.markdown("""
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Freestyle+Script&display=swap');
-
-html, body, [class*="css"] {
-    background-color: #F8F7F3;
-    color: #3B2A4A;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Center the animation nicely */
-.svg-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 3rem;
-    margin-top: -3rem;
-}
-
-/* Create the handwriting animation effect */
-path {
-  fill: none;
-  stroke: #6D2E46;
-  stroke-width: 3;
-  stroke-dasharray: 1800;
-  stroke-dashoffset: 1800;
-  animation: draw 4s ease-in-out forwards;
-}
-
-/* Once the stroke draws, the text fades in */
-text {
-  font-family: 'Freestyle Script', cursive;
-  font-size: 140px;
-  fill: #6D2E46;
-  opacity: 0;
-  animation: fadeInText 2s ease-in-out 3.8s forwards;
-}
-
-/* Keyframes for handwriting effect */
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-/* Keyframes for text fade-in */
-@keyframes fadeInText {
-  to {
-    opacity: 1;
-  }
-}
-</style>
-
-<!-- Handwriting SVG animation for 'Scent Sense' -->
-<div class="svg-container">
-<svg width="900" height="200" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg">
-  <path d="M20,150 Q150,20 300,120 T600,130 T850,80" />
-  <text x="100" y="150">Scent Sense</text>
-</svg>
-</div>
-""", unsafe_allow_html=True)
 # -------------------- NAVIGATION --------------------
 if "page" not in st.session_state:
     st.session_state.page = "home"
