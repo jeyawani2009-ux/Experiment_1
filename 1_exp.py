@@ -53,7 +53,7 @@ h1 {
     font-family: 'Freestyle Script', cursive !important;
     text-align: left;
     font-size: 8em !important;
-    color: #5C0029 !important ;
+    color: #0A0A0A !important ;
     margin-top: -5rem !important;
     margin-bottom: 0.1em !important;
 }
